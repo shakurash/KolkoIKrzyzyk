@@ -13,6 +13,9 @@
 		E1519500248CEA8A00171E3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15194FE248CEA8A00171E3F /* Main.storyboard */; };
 		E1519502248CEA8D00171E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1519501248CEA8D00171E3F /* Assets.xcassets */; };
 		E1519505248CEA8D00171E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1519503248CEA8D00171E3F /* LaunchScreen.storyboard */; };
+		E151950D248CEBC900171E3F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151950C248CEBC900171E3F /* GameViewController.swift */; };
+		E1519512248D0C9B00171E3F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1519511248D0C9B00171E3F /* NavigationController.swift */; };
+		E18C20D2248D128500E464CD /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18C20D1248D128500E464CD /* Engine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E1519501248CEA8D00171E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1519504248CEA8D00171E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1519506248CEA8D00171E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E151950C248CEBC900171E3F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E1519511248D0C9B00171E3F /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		E18C20D1248D128500E464CD /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		E15194F7248CEA8A00171E3F /* KolkoIKrzyzyk */ = {
 			isa = PBXGroup;
 			children = (
-				E15194F8248CEA8A00171E3F /* AppDelegate.swift */,
-				E15194FA248CEA8A00171E3F /* SceneDelegate.swift */,
-				E15194FC248CEA8A00171E3F /* ViewController.swift */,
-				E15194FE248CEA8A00171E3F /* Main.storyboard */,
-				E1519501248CEA8D00171E3F /* Assets.xcassets */,
-				E1519503248CEA8D00171E3F /* LaunchScreen.storyboard */,
 				E1519506248CEA8D00171E3F /* Info.plist */,
+				E1519510248CEC1700171E3F /* Support */,
+				E151950F248CEBF400171E3F /* Controllers */,
+				E151950E248CEBD700171E3F /* Views */,
 			);
 			path = KolkoIKrzyzyk;
+			sourceTree = "<group>";
+		};
+		E151950E248CEBD700171E3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1519503248CEA8D00171E3F /* LaunchScreen.storyboard */,
+				E15194FE248CEA8A00171E3F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E151950F248CEBF400171E3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E151950C248CEBC900171E3F /* GameViewController.swift */,
+				E18C20D1248D128500E464CD /* Engine.swift */,
+				E15194FC248CEA8A00171E3F /* ViewController.swift */,
+				E1519511248D0C9B00171E3F /* NavigationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E1519510248CEC1700171E3F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E1519501248CEA8D00171E3F /* Assets.xcassets */,
+				E15194F8248CEA8A00171E3F /* AppDelegate.swift */,
+				E15194FA248CEA8A00171E3F /* SceneDelegate.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E151950D248CEBC900171E3F /* GameViewController.swift in Sources */,
+				E18C20D2248D128500E464CD /* Engine.swift in Sources */,
 				E15194FD248CEA8A00171E3F /* ViewController.swift in Sources */,
+				E1519512248D0C9B00171E3F /* NavigationController.swift in Sources */,
 				E15194F9248CEA8A00171E3F /* AppDelegate.swift in Sources */,
 				E15194FB248CEA8A00171E3F /* SceneDelegate.swift in Sources */,
 			);
